@@ -18,7 +18,7 @@ function toast({ title = '', msg = '', type = 'info', duration = 3000 }) {
         }, duration + 600);
 
         toast.onclick = (e) => {
-            if(e.target.closet('.toast__close')) {
+            if(e.target.closest('.toast__close')) {
                 main.removeChild(toast);
                 clearTimeout(autoRemoveId);
             }
