@@ -33,6 +33,7 @@ body > div {
     font-size: 18px;
     transition: opacity .2s ease;
     min-width: 120px;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .btn:hover {
@@ -44,7 +45,7 @@ body > div {
 }
 
 .btn--success {
-    background-color: #8bc34a;
+    background-color: #45d763;
 }
 
 .btn--warning {
@@ -52,12 +53,13 @@ body > div {
 }
 
 .btn--error {
-    background-color: #ff5722;
+    background-color: #f44336;
 }
 
 .btn--disabled {
     opacity: 0.5 !important;
     cursor: default;
+    
 }
 
 .btn--size-s {
@@ -86,7 +88,7 @@ body > div {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
     min-width: 400px;
     max-width: 450px;
-    animation: slideInLeft .3s ease-in-out;
+    transition: all .4s linear;
 }
 
 @keyframes slideInLeft {
@@ -96,6 +98,12 @@ body > div {
     } to {
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes faceOut {
+    to {
+        opacity: 0;
     }
 }
 
