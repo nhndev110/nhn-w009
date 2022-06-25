@@ -5,16 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/style.css">
         <title>Toast Message</title>
     </head>
     <body>
-        <div class="toast">
-            <div class="icon">
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
-            <div class="body"></div>
-            <div class="close">
-                <i class="fa-solid fa-xmark"></i>
+        <div id="container-toast">
+            <div class="toast toast--success">
+                <div class="toast__icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div class="toast__body">
+                    <h4 class="toast__title">Success</h4>
+                    <p class="toast__msg">Lorem ipsum dolor, sit amet consectetur adipisicing elit Lorem.</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
         </div>
     </body>
