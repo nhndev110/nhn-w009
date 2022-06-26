@@ -34,6 +34,7 @@ body > div {
     transition: opacity .2s ease;
     min-width: 120px;
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
+    user-select: none;
 }
 
 .btn:hover {

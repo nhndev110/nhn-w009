@@ -13,10 +13,12 @@ function toast({ title = '', msg = '', type = 'info', duration = 3000 }) {
         const icon = icons[type];
         const delay = (duration / 1000).toFixed(2);
 
+        // ======= Auto Remove =======
         const autoRemoveId = setTimeout(() => {
             main.removeChild(toast);
         }, duration + 600);
 
+        // ======= User Remove =======
         toast.onclick = (e) => {
             if(e.target.closest('.toast__close')) {
                 main.removeChild(toast);
